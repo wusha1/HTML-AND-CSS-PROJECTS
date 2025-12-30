@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head> 
+	<title>HTML Lists</title>
+	<link rel="stylesheet" href="CSS_Lists.css">
+</head>
+<body>
+
+	<h1>My List</h1>
+
+	<h2>Unordered List</h2>
+	<ul>
+		<li>Pirates</li>
+		<li>Survival</li>
+		<li>Exploration</li>
+	</ul>
+
+	<h2>Ordered List</h2>
+	<ol>	
+		<li>Open the file</li>
+		<li>Addthe CSS link</li>
+		<li>Run in the browser</li>
+	</lo>
+
+</body>
+</html>
+	
+	
