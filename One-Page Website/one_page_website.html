@@ -1,81 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <title>One Page Website</title>
+    <link rel="stylesheet" href="one_page_website.css">
 </head>
+
 <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <main id="main">
 
-    <!-- Navigation -->
-     <nav>
-        <a href="#home">Home</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#video">Video</a>
-        <a href="#contact">Contact</a>
-     </nav>
+        <!-- Navigation -->
+        <nav aria-label="Main Navigation">
+            <a href="#home">Home</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#video">Video</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
-     <hr>
+        <hr>
 
-     <!-- Home Section -->
-      <section id="home">
-        <h1>Welcome to My One Page-Website</h1>
-        <p>
-            This is a simple one-page website I created using HTML.
-            it contains images, a video, a contract form, and navigation using HTML bookmarks.
-        </p>
+        <!-- Home Section -->
+        <section id="home">
+            <h1>Welcome to My One Page-Website</h1>
+            <p>
+                This is a simple one-page website I created using HTML.
+                it contains images, a video, a contract form, and navigation using HTML bookmarks.
+            </p>
         </section>
 
-    <hr>
+        <hr>
 
-    <!-- Image Section -->
-    <section id="gallery">
-        <h2>Image Gallery</h2>
+        <!-- Image Section -->
+        <section id="gallery">
+            <h2>Image Gallery</h2>
 
-        <img src="images/Game Dev_1.jpg" alt="Sample image one" width="300">
-        <img src="images/Game Dev_2.jpg" alt="Sample image two" width="300">
-        <img src="images/Game Dev_3.jpg" alt="Sample image three" width="300">
-    </section>
+            <img src="images/Game Dev_1.jpg" alt="Sample image one" width="300">
+            <img src="images/Game Dev_2.jpg" alt="Sample image two" width="300">
+            <img src="images/Game Dev_3.jpg" alt="Sample image three" width="300">
+        </section>
 
-    <hr>
+        <hr>
 
-    <!-- Video Section --> <section id="video">
-        <h2>Featured Video</h2>
+        <!-- Video Section -->
+        <section id="video">
+            <h2>Featured Video</h2>
 
-        <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/wBfc80Uvi_Q"
-            title="Sample Video">
-            allowfullscreen>
-    </iframe>
-</section>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wBfc80Uvi_Q"
+                title="Game Development Video" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-pictures"
+                allowfullscreen>
+            </iframe>
+        </section>
 
-    <hr>
+        <hr>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Us</h2>
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
 
-        <form>
-            <label>Name:</label><br>
-            <input type="text" name="name"><br><br>
+            <form>
+                <label>Name:</label><br>
+                <input type="text" name="Name"><br><br>
+                <label>Email:</label><br>
+                <input type="email" name="email"><br><br>
 
-            <label>Email:</label><br>
-            <input type="email" name="email"><br><br>
+                <label>Message:</label><br>
+                <input type="text" name="message"><br><br>
 
-            <label>Message:</label><br>
-            <input type="text" name="message"><br><br>
+                <input type="submit" value="Send">
+            </form>
+        </section>
 
-            <input type="submit" value="Send">
-        </form>
-    </section>
+        <hr>
 
-    <hr>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 My One Page Website</p>
-    </footer>
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 My One Page Website</p>
+        </footer>
 
 </body>
-</html> 
+
+</html>
