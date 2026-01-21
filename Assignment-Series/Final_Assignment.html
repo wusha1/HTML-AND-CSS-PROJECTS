@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Victor Andrade | Portfolio</title>
+    <link rel="stylesheet" href="stylesheet/portfolio.css" />
+  </head>
+
+  <body class="Background">
+    <!-- Navbar -->
+    <nav class="Navbar">
+      <a class="active" href="#Home">Home</a>
+      <a href="#About">About</a>
+      <a href="#GitHub">GitHub</a>
+      <a href="#Contact">Contact</a>
+    </nav>
+
+    <!-- Home -->
+    <header id="Home" class="Video_Container">
+      <video autoplay muted loop playsinline id="Typing_Video">
+        <source src="video/video 2.mp4" type="video/mp4" />
+        Your browser does not support HTML5 video.
+      </video>
+
+      <div class="Video_Text">
+        <h1 class="white-text">Victor Andrade</h1>
+        <p class="center">
+          Aspiring video game developer building creative worlds through code.
+        </p>
+      </div>
+    </header>
+
+    <!-- About -->
+    <section class="Row" id="About">
+      <div class="Column_2">
+        <img src="image/videogame 2.jpg" alt="Gaming image" />
+      </div>
+
+      <div class="Column_1">
+        <h1>About</h1>
+        <p>
+          I’ve been passionate about video games since I was young, and that passion stayed with me into adulthood.
+          I didn’t know how to turn it into a career until I enrolled in The Tech Academy, where I started learning
+          how to build projects through code.
+          <br /><br />
+          I love creating something from nothing and turning ideas into reality. As a lifelong gamer, I’ve watched trends
+          evolve and learned what resonates with players. I’m working toward becoming a video game developer and creating
+          experiences I’m proud to share.
+          <br /><br />
+          If you’d like to connect or collaborate, <a href="#Contact">contact me here</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- GitHub -->
+    <section class="Row" id="GitHub">
+      <div class="Column_1">
+        <h1>GitHub</h1>
+        <p>You can view my projects here:</p>
+        <p class="center">
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer">My GitHub Profile</a>
+        </p>
+      </div>
+
+      <div class="Column_2">
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+          <img class="github-logo" src="image/GitHub.png" alt="GitHub logo" />
+        </a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="Row" id="Contact">
+      <div class="Column_2">
+        <img src="image/videogame 1.jpg" alt="Contact image" />
+      </div>
+
+      <div class="Column_1">
+        <h1>Contact</h1>
+
+        <form action="https://formspree.io/f/mrgolqyv" method="POST">
+          <label for="Name">Name:</label>
+          <input id="Name" type="text" name="name" placeholder="Your name" required />
+
+          <label for="Email">Email:</label>
+          <input id="Email" type="email" name="email" placeholder="Your email" required />
+
+          <label for="Message">Message:</label>
+          <textarea id="Message" name="message" placeholder="Your message" required></textarea>
+
+          <input type="submit" value="SUBMIT" />
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p class="center">
+        &copy; Victor Andrade ·
+        <a href="https://www.learncodinganywhere.com/" target="_blank" rel="noopener noreferrer">The Tech Academy</a>
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Text Over Image Challenge</title>
+    <style> 
+        image-container {
+            position: relative;
+            width: 400;
+            margin: 50px auto;
+        }
+        /*Image Style*/
+        .image-container img {
+            width: 100%;
+            border-radius: 20;
+        }
+        /*Text over the Image*/
+        .image-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="text-align:center">Text Over Image Challenge</h2>
+    <div class="image-container">
+        <img src="image/videogame 1.jpg" alt="Video game image">
+        <div class="image-text">
+            Gaming Future
+        </div>
+    </div>
+</body>
+
+</html>

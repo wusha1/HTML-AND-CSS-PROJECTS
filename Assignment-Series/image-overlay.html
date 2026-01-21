@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Image Overlay Fade</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        /*Container for image and overlay*/
+        image-box {
+            position: relative;
+            width: 400px;
+            margin: 50px auto;
+        }
+
+        /*IMAGE*/
+        .image-box img {
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+
+        /*Shows overlay when hovering*/
+        .image-box:hover .overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Image Overlay Fade</h2>
+    <div class="image-box">
+        <img src="image/videogame 1.jpg" alt="Video game image">
+        <div class="overlay">
+            <p>Game Night Ready</p>
+        </div>
+    </div>
+</body>
+
+</html>

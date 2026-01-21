@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fixed Navbar Challenge</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /*Navbar Container*/
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #333;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        /*Navbar Link*/
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            ;
+        }
+
+        /*Hover Effect*/
+        .navbar a:hover {
+            color: yellow;
+        }
+
+        /*Page content*/
+        .content {
+            margin-top: 80px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Navbar-->
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+    <!--Page Content-->
+    <div class="content">
+        <h2>Fixed Navbar</h2>
+        <p>
+            This page shows how a fixed navigation bar stays at the top
+            while scrolling.
+        </p>
+        <p style="margin-top:1000px;">
+            End of page.
+        </p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Video Text Overlays</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: black;
+        }
+
+        .video-box {
+            position: relative;
+            width: 80%;
+            max-width: 700px;
+            margin: 50px auto;
+        }
+
+        /*Video Size*/
+        .video-box video {
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        /*Text on top of video*/
+        .video-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-505, -50%);
+            color: white;
+            font-size: 28px;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 15px 25px;
+            border-radius: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="video-box">
+        <video autoplay muted loop>
+            <source src="video/video.mp4" type="video/mp4">
+        </video>
+        <div class="video-text">Welcome to Game Night
+        </div>
+    </div>
+</body>
+
+</html>
