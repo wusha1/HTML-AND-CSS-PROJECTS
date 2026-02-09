@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Simple Recipes</title>
@@ -11,9 +11,10 @@
     <!--NAVBAR-->
     <nav class="nav-bar">
         <ul>
-            <li><a href="#about">About</a></li>
             <li><a href="#">Home</a></li>
-            <li class="drop"><a href="#recipes">Recipes</a>
+
+            <li class="drop">
+                <a href="#recipes">Recipes</a>
                 <div class="rollover-menu">
                     <a href="#featured">Featured Recipe</a>
                     <a href="#pasta">Pasta</a>
@@ -23,54 +24,63 @@
                     <a href="#fish">Fish</a>
                     <a href="#dessert">Dessert</a>
                 </div>
+            </li>
+
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+
     <!--HEADER-->
     <header>
         <h1>Simple Recipes</h1>
     </header>
+
     <!--RECIPES-->
     <section>
         <!--FEATURED RECIPES-->
         <div class="container" id="featured">
             <h2>Featured Recipes</h2>
+
             <div class="column recipe-card-background">
                 <div class="recipe-container">
-                    <img src="images/skillet-pizza.jpeg">
+                    <img src="images/skillet-pizza.jpeg" alt="Deep dish skillet pizza">
                 </div>
             </div>
+
             <div class="column">
                 <h3 id="featured-header">Deep Dish Skillet Pizza</h3>
-                <h4> Prep Time:</h4>
+                <h4>Prep Time:</h4>
                 <p>30 - 40 minutes</p>
                 <h4>Level:</h4>
                 <p>medium</p>
-                <p id="featured-main-text">Deep dish pizza has got a lot going for it:
+                <p id="featured-main-text">
+                    Deep dish pizza has got a lot going for it:
                     a thick crust that's tender and chewy on the inside,
                     but nicely crisped on the outside; a little extra room for piling
                     on the toppings; and, deep dish is less needy than its thin crust
                     style counterpart, which requires some care when rolling and stretching.
                     Here, you just push the dough into the skillet and you're cooking.
-                    Save the leftovers for lunch!</p>
-                <input id="featured-button" type="button" value="Recipe">
+                    Save the leftovers for lunch!
+                </p>
+
+                <!-- BUTTON FIX: removed href, added button text, added closing tag -->
+                <button id="featured-button" class="modal-button" type="button">Recipe</button>
             </div>
         </div>
-        </div>
+
         <!--RECIPE CARDS-->
         <div class="container" id="recipes">
             <h2>Recipes</h2>
+
             <!--PASTA-->
             <div class="column" id="pasta">
                 <div class="recipe-container">
                     <h3>Saucy Tortelloni Parm</h3>
                     <div class="flip">
-                        <!--FRONT-->
                         <div class="flip-front">
-                            <img src="images/tortelloni.jpeg">
+                            <img src="images/tortelloni.jpeg" alt="Saucy tortelloni parmesan">
                         </div>
-                        <!--BACK-->
                         <div class="flip-back">
                             <div class="text-container">
                                 <h4>Prep Time:</h4>
@@ -83,16 +93,15 @@
                     </div>
                 </div>
             </div>
+
             <!--CHICKEN-->
             <div class="column recipe-card-background" id="chicken">
                 <div class="recipe-container">
-                    <h3>Saucy Tortelloni Parm</h3>
+                    <h3>Chicken Thighs</h3>
                     <div class="flip">
-                        <!--FRONT-->
                         <div class="flip-front">
-                            <img src="images/chicken-thighs.jpeg">
+                            <img src="images/chicken-thighs.jpeg" alt="Chicken thighs">
                         </div>
-                        <!--BACK-->
                         <div class="flip-back">
                             <div class="text-container">
                                 <h4>Prep Time:</h4>
@@ -105,16 +114,15 @@
                     </div>
                 </div>
             </div>
+
             <!--PORK-->
             <div class="column recipe-card-background" id="pork">
                 <div class="recipe-container">
-                    <h3>Crispy Pork Katsu & Rice</h3>
+                    <h3>Crispy Pork Katsu &amp; Rice</h3>
                     <div class="flip">
-                        <!--FRONT-->
-                        <div class="flipe-front">
-                            <img src="images/pork-katsu.jpeg">
+                        <div class="flip-front">
+                            <img src="images/pork-katsu.jpeg" alt="Crispy pork katsu and rice">
                         </div>
-                        <!--BACK-->
                         <div class="flip-back">
                             <div class="text-container">
                                 <h4>Prep Time:</h4>
@@ -127,16 +135,15 @@
                     </div>
                 </div>
             </div>
+
             <!--Biscuits-->
             <div class="column" id="bisquits">
                 <div class="recipe-container">
-                    <h3>Cheddar Cheese Bicuits</h3>
+                    <h3>Cheddar Cheese Biscuits</h3>
                     <div class="flip">
-                        <!--FRONT-->
                         <div class="flip-front">
-                            <img src="images/cheddar-biscuits.jpeg">
+                            <img src="images/cheddar-biscuits.jpeg" alt="Cheddar cheese biscuits">
                         </div>
-                        <!--BACK-->
                         <div class="flip-back">
                             <div class="text-container">
                                 <h4>Prep Time:</h4>
@@ -149,16 +156,15 @@
                     </div>
                 </div>
             </div>
+
             <!--FISH-->
             <div class="column" id="fish">
                 <div class="recipe-container">
-                    <h3>Baked Cod & Scalloped Potatoes</h3>
+                    <h3>Baked Cod &amp; Scalloped Potatoes</h3>
                     <div class="flip">
-                        <!--FRONT-->
                         <div class="flip-front">
-                            <img src="images/baked-cod.jpeg">
+                            <img src="images/baked-cod.jpeg" alt="Baked cod and scalloped potatoes">
                         </div>
-                        <!--BACK-->
                         <div class="flip-back">
                             <div class="text-container">
                                 <h4>Prep Time:</h4>
@@ -171,16 +177,15 @@
                     </div>
                 </div>
             </div>
+
             <!--DESSERT-->
-            <div class="column recipe-card background" id="dessert">
+            <div class="column recipe-card-background" id="dessert">
                 <div class="recipe-container">
-                    <h3>S'mores Cake</h3>
+                    <h3>S&#39;mores Cake</h3>
                     <div class="flip">
-                        <!--FRONT-->
                         <div class="flip-front">
-                            <img src="images/smores.jpeg">
+                            <img src="images/smores.jpeg" alt="S'mores cake">
                         </div>
-                        <!--BACK-->
                         <div class="flip-back">
                             <div class="text-container">
                                 <h4>Prep Time:</h4>
@@ -193,8 +198,10 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
+
     <!--ABOUT-->
     <section id="about">
         <div class="container">
@@ -217,9 +224,64 @@
             </div>
         </div>
     </section>
+
+    <!--RECIPE MODAL ONE (ONLY ONCE)-->
+    <div id="recipeModalOne" class="recipe-modal">
+        <div class="recipe-content">
+            <span class="close-btn">&times;</span>
+
+            <div class="modal-header">
+                <h3>Deep Dish Skillet Pizza</h3>
+            </div>
+
+            <div class="modal-body">
+                <div class="row">
+                    <div class="rp-column-1">
+                        <h4>Cook Time</h4>
+                        <p>30-40 minutes</p>
+                    </div>
+                    <div class="rp-column-1">
+                        <h4>Servings</h4>
+                        <p>6</p>
+                    </div>
+                    <div class="rp-column-1">
+                        <h4>Level</h4>
+                        <p>medium</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="rp-column-1">
+                        <h4>Ingredients</h4>
+                        <ul class="recipe-list">
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                        </ul>
+                    </div>
+
+                    <div class="rp-column-2">
+                        <h4>Directions</h4>
+                        <p class="recipe-directions">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                            eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                            in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
     <!--CONTACT FORM-->
-    <section>
-        <div class="container" id="contact">
+    <section id="contact">
+        <div class="container">
             <h2>Contact Us</h2>
             <h3>Want more information about our recipes?
                 <br>
@@ -241,6 +303,7 @@
             </form>
         </div>
     </section>
+
     <!--FOOTER-->
     <footer>
         <table>
@@ -258,6 +321,9 @@
             </tr>
         </table>
     </footer>
+
+    <script src="javascript/javascript.js"></script>
+
 </body>
 
 </html>

@@ -27,7 +27,7 @@ html {
      over all elements*/
 }
 
-ul {
+.nav-bar ul {
     display: flex;
     /*Creates a flex container which will
     expand or shrink elements to fill the space available
@@ -62,13 +62,12 @@ a {
 
 a:hover,
 .drop:hover a:only-of-type
-
 /*Only-of-type effects
 the only child element nested within an element. This will
 keep the backgroud color blue while hovering and the text
 white when we move the mouse over anchor elements in the
 rollover-menu div*/
-    {
+{
     background-color: rgb(149, 238, 223);
     color: white;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.7);
@@ -84,7 +83,7 @@ rollover-menu div*/
     /*Absolute will position the div
     element relative to the position of its parent element*/
     background-color: white;
-    box-shadow: 0px 8px 16 px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 /*Creates a trigger effect when the user hovers their mouse 
@@ -100,7 +99,7 @@ within the rollover-menu class div element*/
 
 .rollover-menu a:hover {
     color: white;
-    box-shadow: 0px 8px 16px 0px rgb(90, 90, 90, 0.2);
+    box-shadow: 0px 8px 16px 0px rgba(90, 90, 90, 0.2);
 }
 
 .rollover-menu a:nth-child(1) {
@@ -114,7 +113,7 @@ footer {
     /*Will align nested HTML elements
     in the center i.e. the table data and paragraph elements
     in the footer tag*/
-    margin: 0px -8px -8 -8px;
+    margin: 0px -8px -8px -8px;
     /*Stretches the footer
     background beyond the browsers edge leaving no white
     space*/
@@ -126,8 +125,8 @@ footer {
 }
 
 table {
-    width: 100%l
-        /*Will take up the full width of the
+    width: 100%;
+    /*Will take up the full width of the
     browser screen*/
 }
 
@@ -142,7 +141,7 @@ td p {
     /*FONT from 
     fonts.google.com*/
     font-size: 20px;
-    font-weight: center;
+    font-weight: 600;
     color: rgb(247, 177, 188);
 }
 
@@ -153,6 +152,12 @@ td p {
     background-size: 100%;
     padding-top: 60px;
     padding-left: 30px;
+}
+
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /*HEADERS*/
@@ -186,7 +191,7 @@ h3 {
 }
 
 h4 {
-    font-size: underline;
+    font-size: 22px;
     text-decoration: underline;
     text-transform: uppercase;
 }
@@ -228,8 +233,8 @@ in elements with the .column class*/
 .column img:nth-child(-n + 7) {
     width: 500px;
     height: 350px;
-    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.4),
-        0 6px 20px 0 rgb(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4),
+        0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
 .recipe-container {
@@ -291,7 +296,7 @@ in elements with the .column class*/
 /*Sets margin left to 0 because it is not needed on a 
 small screen and centers the text*/
 @media screen and (max-width: 1200px) {
-    #featured-media-text {
+    #featured-main-text {
         margin-left: 0;
     }
 }
@@ -364,14 +369,14 @@ in the Featiured Recipe section*/
 .flip {
     position: relative;
     width: 100%;
-    height: center;
-    /*Setting with width and heoght to 100%
+    height: 100%;
+    /*Setting with width and height to 100%
     will allow the effect to take up 100% of the
     space available*/
     text-align: center;
-    transition: 0.5 ease-in-out;
+    transition: 0.5s ease-in-out;
     transform-style: preserve-3d;
-    /*Trea5ts elements as 3D
+    /*Treats elements as 3D
     objects instead of flat (2D) objects*/
 }
 
@@ -394,11 +399,11 @@ in the Featiured Recipe section*/
     border: 2px solid white;
     transform: rotateY(180deg);
     /*Adds 180 degrees back from
-    the previouslt subtracted -180 degrees it moved to
-    previously so the text can be rea properly*/
+    the previously subtracted -180 degrees it moved to
+    previously so the text can be read properly*/
 }
 
-.text-contanier {
+.text-container {
     padding-top: 70px;
 }
 
@@ -414,7 +419,7 @@ input[type="button"] {
     background-color: #fff;
     border: none;
     border-radius: 20px;
-    font-family: 'Josefin', serif;
+    font-family: 'Josefin Slab', serif;
     /*Font from
     fonts.google.com*/
     font-weight: bold;
@@ -431,7 +436,7 @@ input[type="button"]:hover {
 
 /*CONTACT FORM CSS*/
 
-/*Sets up the content within the div tag cotaing the ID
+/*Sets up the content within the div tag containing the ID
 contact to be centered on the webpage*/
 #contact {
     display: block;
@@ -460,7 +465,7 @@ form input {
     padding: 3px;
     margin: 10px 15px 10px 0px;
     transition: 0.3s ease-out;
-    /*Transitions back too light
+    /*Transitions back to light
     gray when user clicks away from an input field*/
 }
 
@@ -496,11 +501,11 @@ textarea {
     color: rgb(165, 165, 165);
     font-size: 15px;
     transition: 0.3s ease-out;
-    /*Will ttransition back to 
+    /*Will transition back to 
     light gray*/
 }
 
-testarea:focus {
+textarea:focus {
     color: black;
     border: 3px solid rgb(1, 128, 106);
     transition: 0.3s ease-out;
@@ -525,34 +530,125 @@ input[type="submit"] {
     bottom right of the form*/
 }
 
-#about {
-    padding: 60px 20px;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
-#about h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-
-#about div {
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 16px;
-    line-height: 1.6;
-}
-
 input[type="submit"]:hover {
     background-color: rgb(247, 177, 188);
 }
 
 #about {
     padding: 60px;
+    text-align: center;
+}
+
+#about .container {
+    padding-left: 0px;
+    display: block;
+    width: 100%;
 }
 
 #about .about-text {
     max-width: 900px;
     margin: auto;
     line-height: 1.7;
+}
+
+/*Recipe Modal*/
+
+.recipe-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    /*Creates a 
+    transparent background that covers the whole screen*/
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+
+.recipe-content {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    top: 15vh;
+    left: 27vw;
+    width: 45vw;
+    height: 70vh;
+    box-shadow: 0 2px 10px 5px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    padding: 30px 40px;
+    overflow-y: auto;
+}
+
+.close-btn{
+    color: rgb(1, 128, 106);
+    font-size: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    padding-right: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.modal-header{
+    padding-top: 20px;
+}
+
+.modal-body{
+    padding: 20px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.rp-column-1{
+    width: 33%;
+}
+
+.rp-column-2{
+    width: 67%;
+}
+
+.recipe-list{
+    margin-left: 0px;
+    padding-left: 0px;
+    list-style-type: none;
+    font-family: "Josefin Slab", serif;
+    font-size: 18px;
+    display: block; /*This will override the flex value property 
+    in the ul type selector and list each item one after the 
+    other*/
+    border: none; /*Overrides the border property and value in the 
+    ul type selectpr*/
+    background-color: transparent; /*Overrides the background
+    color in the ul type selector*/
+    line-height: 1.5;
+    text-align: center;
+}
+
+.recipe-directions{
+    padding: 0px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+}
+
+@media screen and (max-width: 1000px) {
+    .recipe-content {
+        left: 10vw;
+        width: 80vw;
+        height: 75vh;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .rp-column-1,
+    .rp-column-2 {
+        width: 100%;
+    }
 }
